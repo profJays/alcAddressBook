@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="aa.css" rel="stylesheet" as="style" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Inconsolata|Roboto" rel="stylesheet">
+    <script src="src/model.js"></script>
+    <script src="src/cntrl.js"></script>
+    <script src="src/delview.js"></script>
+    <script>'use strict';</script>
+    <script>window.addEventListener("load", cnt.view.deleteContact.setupUserInterface);</script>
+    <title>Delete</title>
+</head>
+<body>
+<header>
+    <div id="head">
+        <h2>ADDRESS BOOK</h2>
+        <h4>ALC 2.0 Web Beginner : Take A Climb Challenge</h4>
+        <h3>JOSEPH JOHN</h3>
+        <span>@tayojays</span>
+    </div>
+    <center>
+        <nav>
+            <ul class="menuTop">
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="#viewlist">View Contact List</a></li> -->
+                <li><a href="create.html">Add New Contact</a></li>
+                <li><a href="edit.html">Edit Contact</a></li>
+                <li class="active" style="border-width: 1px; border-color: red; border-style: solid;"><a href="delete.html">Delete Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </center>
+</header>
+<div id="main">
+    <h1>Delete a Contact</h1>
+    <form id="Contact">
+        <label for="contactes">Select Contact</label>
+        <select id="contactes" name="selectContact">
+            <option value=""> --- </option>
+        </select>
+
+        <input type="submit" style="background-color: red" value="Delete Contact" name="commit">
+    </form>
+    <br><br>
+    <small>Click <a href="index.html"> here</a> to view contact list</a></small>
+</div><br><br>
+<div class="footer">
+    <p id="cb">Designed by @tayojays</p>
+</div>
+</body>
+</html>
+
+
+

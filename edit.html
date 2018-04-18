@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>edit contact</title>
+    <link href="aa.css" rel="stylesheet" as="style" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Inconsolata|Roboto" rel="stylesheet">
+    <script src="src/model.js"></script>
+    <script src="src/cntrl.js"></script>
+    <script src="src/uview.js"></script>
+    <script>'use strict';</script>
+    <script>window.addEventListener("load", cnt.view.updateContact.setupUserInterface);</script>
+</head>
+<body>
+<header>
+    <div id="head">
+        <h2>ADDRESS BOOK</h2>
+        <h4>ALC 2.0 Web Beginner : Take A Climb Challenge</h4>
+        <h3>JOSEPH JOHN</h3>
+        <span>@tayojays</span>
+    </div>
+    <center>
+        <nav>
+            <ul class="menuTop">
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="#viewlist">View Contact List</a></li> -->
+                <li><a href="create.html">Add New Contact</a></li>
+                <li class="active" style="border-width: 1px; border-color: red; border-style: solid;"><a href="edit.html">Edit Contact</a></li>
+                <li><a href="delete.html">Delete Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </center>
+</header>
+<div id="main">
+    <form id="Contact">
+
+        <h1>Update Contact Info</h1>
+
+        <label for="contactes">Select Contact</label>
+        <select id="contactes" name="selectContact">
+            <option value=""> --- </option>
+        </select>
+
+        <label for="namee">Full Name</label>
+        <input type="text" id="namee" name="contactname" readonly="readonly">
+
+        <label for="num">Phone Number</label>
+        <input type="text" id="num" name="number">
+
+        <label for="emaile">E-mail Address</label>
+        <input type="text" id="emaile" name="email">
+
+        <!-- <label for="img">Image URl</label> -->
+        <input type="hidden" id="img" name="imaage">
+
+        <input type="submit" value="Save Changes" name="commit">
+    </form>
+    <p>click <a href="index.html">here</a> to return to homepage</p>
+    <small>Click <a href="index.html"> here</a> to view contact list</small>
+</div>
+<br><br>
+<div class="footer">
+    <p id="cb">Designed by @tayojays</p>
+</div>
+</body>
+</html>

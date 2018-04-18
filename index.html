@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Joseph John Address Book (@tayojays)</title>
+    <link href="aa.css" rel="stylesheet" type="text/css">
+    <!-- <link href="style.css" rel="stylesheet" type="text/css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Inconsolata|Roboto" rel="stylesheet">
+    <script src="src/model.js"></script>
+    <script src="src/cntrl.js"></script>
+    <script src="src/listview.js"></script>
+    <script>'use strict';</script>
+    <script>window.addEventListener("load", cnt.view.listcontacts.setupUserInterface);</script>
+</head>
+<body>
+<!-- <div id="topHeader"> -->
+<header>
+    <div id="head">
+        <h2>ADDRESS BOOK</h2>
+        <h4>ALC 2.0 Web Beginner : Take A Climb Challenge</h4>
+        <h3>JOSEPH JOHN</h3>
+        <span>@tayojays</span>
+    </div>
+    <center>
+        <nav>
+            <ul class="menuTop">
+                <li class="active" style="border-width: 1px; border-color: red; border-style: solid;"><a href="index.html">Home</a></li>
+                <!-- <li><a href="#viewlist">View Contact List</a></li> -->
+                <li><a href="create.html">Add New Contact</a></li>
+                <li><a href="edit.html">Edit Contact</a></li>
+                <li><a href="delete.html">Delete Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </center>
+</header>
+
+<!-- <div align="center">
+    <img src="img/alc.png">
+</div>
+
+<div id="main">
+    <div id="mage">
+        <p><a href="createindex.html"><img src="img/create%20img.png" alt=" create contact icon" class="mage"> Create New Contact </a></p>
+        <p><a href="listallindex.html"><img src="img/listaall.png" alt=" create contact icon" class="mage"> List All Contact </a></p>
+        <p><a href="editindex.html"><img src="img/editimg.jpg" alt=" create contact icon" class="mage"> Edit Contact Info </a></p>
+        <p><a href="delete.html"><img src="img/deleteimg.jpg" alt=" create contact icon" class="mage"> Delete Contact </a></p>
+    </div>
+</div> -->
+<div id="viewlist">
+    
+</div>
+<div id="first">
+    <div id="main">
+        <h1 id="tab">Address Contact List</h1>
+        <span>(Click on the contact name to see more details) </span>
+        <table id="contacts">
+            <thead>
+            <tr>
+                <th>Names</th>
+                <th>Number</th>
+                <th>Email</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+<div id="second">
+    <div id="main2">
+        <p id="conname"></p>
+        <p id="connum"></p>
+        <p id="conmail"></p>
+    </div>
+    <br><br>
+    <center><small>Click <a href="index.html"> here</a> to view complete contact list</small></center>
+</div>
+<br><br>
+<div class="footer">
+    <p id="cb">Designed by @tayojays</p>
+</div>
+</body>
+</html>
